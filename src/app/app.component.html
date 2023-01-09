@@ -1,0 +1,50 @@
+<!--navbar begin-->
+<nav class="navbar navbar-expand-lg fixed-top" [ngStyle]="navbg">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">MOVIEFlix</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Browse
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/browse','action']">Action</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','adventure']">Adventure</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','animation']">Animation</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','comedy']">Comedy</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','crime']">Crime</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','documentary']">Documentary</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','drama']">Drama</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','family']">Family</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','fantasy']">Fantasy</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','history']">History</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','horror']">Horror</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','music']">Music</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','mystery']">Mystery</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','romance']">Romance</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','scifi']">Sci-Fi</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','tv']">TV Movie</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','thriller']">Thriller</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','war']">War</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/browse','western']">Western</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Watch Movies</a>
+        </li>
+      </ul>
+      <a id="Homebtn" class="nav-item nav-link me-3" aria-current="page" routerLink="">Home</a>
+              <button class="btn btn-outline-danger" type="submit" routerLink="/search"><i class="bi bi-search"></i></button>
+    </div>
+  </div>
+</nav>
+<!--navbar end-->
+
+
+
+<router-outlet></router-outlet>

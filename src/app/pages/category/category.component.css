@@ -1,0 +1,19 @@
+img{
+    width: 100%;
+}
+
+h1{
+    color: #FFF;
+}
+
+p{
+    color: #FFF;
+}
+
+.lang{
+    border: 2px solid #E50914;
+    border-radius: 5px;
+    padding: 2px;
+    color: #E50914;
+    
+}

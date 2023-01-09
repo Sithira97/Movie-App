@@ -1,0 +1,29 @@
+<div class="contain mt-5 p-5">
+    <div class="row mt-5">
+        <div class="col-lg-4" *ngFor="let s of GotData">
+            <div class="row">
+                <div class="col-lg-3 mt-4 mb-4" *ngIf="s.poster_path">
+                    <img src="https://image.tmdb.org/t/p/original/{{s.poster_path}}" alt=""
+                        [routerLink]="['/movie',s.id]">
+                </div>
+                <div class="col-lg-9 mt-4 mb-4">
+                    <p><span class="h1">{{s.original_title}} </span><span class="lang">{{s.original_language}}</span> </p>
+
+                    <p>{{s.overview}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4" *ngFor="let s of MoreData">
+            <div class="row">
+                <div class="col-lg-3 mt-4 mb-4" *ngIf="s.poster_path">
+                    <img src="https://image.tmdb.org/t/p/original/{{s.poster_path}}" alt=""
+                        [routerLink]="['/movie',s.id]">
+                </div>
+                <div class="col-lg-9 mt-4 mb-4">
+                    <h1>{{s.original_title}}</h1>
+                    <p>{{s.overview}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

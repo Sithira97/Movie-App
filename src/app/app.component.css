@@ -1,0 +1,37 @@
+.navbar .navbar-brand{
+    color: #E50914;
+    font-weight: bold; 
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: #E50914;
+}
+
+.dropdown-menu{
+    background-color: rgb(44, 44, 44);
+}
+
+.dropdown-menu .dropdown-item{
+    color: #E50914;
+    font-weight: normal;
+}
+
+.btn-outline-danger{
+    border-color: #E50914;
+    color: #E50914;
+}
+
+.btn-outline-danger:hover{
+    background-color: #E50914;
+    color: white;
+
+}
+
+#Homebtn{
+    color: #E50914;
+}
+
+::placeholder { 
+    color: #E50914;
+    opacity: 1;
+  }

@@ -1,0 +1,22 @@
+button{
+    background-color: #E50914;
+    color:#FFF;
+}
+
+button:hover{
+    background-color: #E50914;
+    color: #FFF;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    color: #FFF;
+}
+
+p{
+    color: #FFF;
+}
+
